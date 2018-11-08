@@ -21,7 +21,10 @@
 			small{
 				color: #999999;
 				font-family: arial;
-
+				font-size: 12pt;
+			}
+			small:hover{
+				text-decoration: none;
 			}
 			.header{
 				display: inline-block;
@@ -41,8 +44,8 @@
 			}
 			.navbar li {
     			float: left;
-    			padding-top: 50px;
-    			margin: 0px 50px;
+    			padding: 10px;
+    			margin: 40px 25px;
     		}
     		.navbar li a{
     			display: block;
@@ -50,9 +53,11 @@
     			text-decoration: none;
     			font-size: 16pt;
     		}
-    		.navbar li a:hover {
-    			text-decoration: overline;
-    			color: #000000;
+    		.navbar li:hover {
+    			border-top: 2px solid black;
+			}
+			.navbar li a:hover{
+				color: #000000;
 			}
 			.column{
 				float: left;
@@ -82,10 +87,10 @@
 		<div class="header">
 			<nav class="navbar">
 				<ul>
-					<li><a href="#">Company</a><small>Idet mollisi eros dis</small></li>
-					<li><a href="#">Services</a><small>Idet mollisi eros dis</small></li>
-					<li><a href="#">Products</a><small>Idet mollisi eros dis</small></li>
-					<li><a href="#">Gallery</a><small>Idet mollisi eros dis</small></li>
+					<li><a href="#">Company<br><small>Idet mollisi eros dis</small></a></li>
+					<li><a href="#">Services<br><small>Idet mollisi eros dis</small></a></li>
+					<li><a href="#">Products<br><small>Idet mollisi eros dis</small></a></li>
+					<li><a href="#">Gallery<br><small>Idet mollisi eros dis</small></a></li>
 				</ul>
 			</nav>
 		</div>
