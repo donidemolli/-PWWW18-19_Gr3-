@@ -3,23 +3,140 @@
 <head>
 		<meta charset="utf-8">
 		<title>Cultivated School</title>
+
+		<style type="text/css">
+			
+			h1{
+				font-family: georgia, serif;
+			}
+			p li a{
+				font-family: verdana, sans-serif;
+			}
+			header{
+				background-color: #81201a;
+				color: #FFFFFF;
+				width: 100%;
+				height: 120px;
+			}
+			small{
+				color: #999999;
+				font-family: arial;
+
+			}
+			.header{
+				display: inline-block;
+			}
+			.header:last-child{
+				float: right;
+			}
+			#logo h1 p{
+				text-align: center;
+
+			}
+			.navbar ul {
+    			list-style-type: none;
+   				margin: 0;
+   				padding: 0;
+   				overflow: hidden;
+			}
+			.navbar li {
+    			float: left;
+    			padding-top: 50px;
+    			margin: 0px 50px;
+    		}
+    		.navbar li a{
+    			display: block;
+    			color: white;
+    			text-decoration: none;
+    			font-size: 16pt;
+    		}
+    		.navbar li a:hover {
+    			text-decoration: overline;
+    			color: #000000;
+			}
+			.column{
+				float: left;
+				width: 260px;
+				height: 125px;
+				margin-top: 4px;
+			}
+			.left{
+				margin:8px;
+			}
+
+			.center{
+				margin: 8px;
+			}
+			.right{
+				margin: 8px;
+			}
+
+		</style>
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div class="header">
 			<h1>Cultivated School</h1>
-			<p>Free PSD Website Template</p>
+			<p style="color: #d2d2d2">Free PSD Website Template</p>
 		</div>
-		<div class="topnav">
-			<a href="#">Company<p><small>Idet mollisi eros dis</small></p></a>
-			<a href="#">Services<p><small>Idet mollisi eros dis</small></p></a>
-			<a href="#">Products<p><small>Idet mollisi eros dis</small></p></a>
-			<a href="#">Gallery<p><small>Idet mollisi eros dis</small></p></a>
+		<div class="header">
+			<nav class="navbar">
+				<ul>
+					<li><a href="#">Company</a><small>Idet mollisi eros dis</small></li>
+					<li><a href="#">Services</a><small>Idet mollisi eros dis</small></li>
+					<li><a href="#">Products</a><small>Idet mollisi eros dis</small></li>
+					<li><a href="#">Gallery</a><small>Idet mollisi eros dis</small></li>
+				</ul>
+			</nav>
 		</div>
+	</header>
+	<div id="intro">
 		<h1>Cursus penati saccum ut curabitur nulla.</h1>
 			<p>Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur</p>
 			<p>pede. Idet mollisi eros dis orci congue elis et curabitur consequam</p>
 			<p>intensque. Curabiturpisametur in ante</p>
-	</header>
+	</div>
+	<section class="content">
+		<article class = "left column">
+			<div class="column" style="background-color: #5c140e"><h2 style="text-align: center; color: #FFFFFF; padding-top: 25px;" >260 x 125px</h2></div>
+			<h4>Ipsumsenterdum non velit</h4>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, conse</li>
+				<li>Nunc tincidunt augue at sapien viv</li>
+				<li>Quisque mattis tortor ac elit lobort</li>
+				<li>Integer nec nisi eu ante vestibulu</li>
+				<li>Vestibulum molestie nibh sed urna</li>
+				<li>Nunc ornare massa eget risus gra</li>
+			</ul>
+		</article>
+		<article class = "center column">
+			<div class="column" style="background-color: #5c140e"><h2 style="text-align: center; color: #FFFFFF; padding-top: 25px;" >260 x 125px</h2></div>
+			<h4>Ipsumsenterdum non velit</h4>
+			<p> Morbitincidunt maurisque eros molest<br>
+				nunc anteget sed vel lacum mus semper.<br>
+				Anterdumnullam interdum eros dui urna<br>
+				consequam ac nisl nullam ligula vestass.<br>
+				Condimentumfelis et amet tellent<br>
+				quisquet a leo lacus nec augue.<br>
+			</p>
+			
+					<h4>Cursusoci conseque mauristi bulum</h4>
+		</article>
+		<article class = "right column">
+			<div class="column" style="background-color: #5c140e"><h2 style="text-align: center; color: #FFFFFF; padding-top: 25px;" >260 x 125px</h2></div>
+			<h4>Ipsumsenterdum non velit</h4>
+			<p> Morbitincidunt maurisque eros molest<br>
+				nunc anteget sed vel lacum mus semper.</p>
+            <ul>
+            	<li>Lorem ipsum dolor sit amet, conse</li>
+                <li>Nunc tincidunt augue at sapien viv</li>
+            </ul>
+            <p> Morbitincidunt maurisque eros molest<br>
+				nunc anteget sed vel lacum mus semper.<br>
+				Anterdumnullam interdum eros dui urna<br>
+			</p>
+		</article>
+	</section>
+
 </body>
 </html>
