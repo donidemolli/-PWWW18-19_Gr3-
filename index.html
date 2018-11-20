@@ -3,80 +3,8 @@
 <head>
 		<meta charset="utf-8">
 		<title>Cultivated School</title>
-
-		<style type="text/css">
-			
-			h1{
-				font-family: georgia, serif;
-			}
-			p li a{
-				font-family: verdana, sans-serif;
-			}
-			header{
-				background-color: #81201a;
-				color: #FFFFFF;
-				width: 100%;
-				height: 120px;
-			}
-			small{
-				color: #999999;
-				font-family: arial;
-				font-size: 12pt;
-			}
-			small:hover{
-				text-decoration: none;
-			}
-			.header{
-				display: inline-block;
-			}
-			.header:last-child{
-				float: right;
-			}
-			#logo h1 p{
-				text-align: center;
-
-			}
-			.navbar ul {
-    			list-style-type: none;
-   				margin: 0;
-   				padding: 0;
-   				overflow: hidden;
-			}
-			.navbar li {
-    				float: left;
-    				padding: 10px 10px 0px 10px;
-    				margin: 40px 25px;
-    			}
-    			.navbar li a{
-    				display: block;
-    				color: white;
-    				text-decoration: none;
-    				font-size: 16pt;
-    			}
-    			.navbar li:hover {
-    				border-top: 2px solid black;
-			}
-			.navbar li a:hover{
-				color: #000000;
-			}
-			.column{
-				float: left;
-				width: 260px;
-				height: 125px;
-				margin-top: 4px;
-			}
-			.left{
-				margin:8px;
-			}
-
-			.center{
-				margin: 8px;
-			}
-			.right{
-				margin: 8px;
-			}
-
-		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
 </head>
 <body>
 	<header>
@@ -95,53 +23,117 @@
 			</nav>
 		</div>
 	</header>
-	<div id="intro">
-		<h1>Cursus penati saccum ut curabitur nulla.</h1>
-			<p>Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur</p>
-			<p>pede. Idet mollisi eros dis orci congue elis et curabitur consequam</p>
-			<p>intensque. Curabiturpisametur in ante</p>
+	<div class="aaa">
+		<div class="intro">
+			<h1>Cursus penati saccum ut curabitur nulla.</h1>
+			<p>
+				Cursuspenatisaccum ut curabitur nulla tellus tor ames a in curabitur<br>
+				pede. Idet mollisi eros dis orci congue elis et curabitur consequam<br>
+				intensque. Curabiturpisametur in ante
+			</p>
+		</div>
+		<div class="intro" style="float: right;">
+			<div class="top">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+			<div class="bottom">	
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
 	</div>
-	<section class="content">
-		<article class = "left column">
-			<div class="column" style="background-color: #5c140e"><h2 style="text-align: center; color: #FFFFFF; padding-top: 25px;" >260 x 125px</h2></div>
+	<article class="content">
+		<section>
+			<div class="rectangle"><h2>260 x 125px</h2></div>
 			<h4>Ipsumsenterdum non velit</h4>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, conse</li>
-				<li>Nunc tincidunt augue at sapien viv</li>
-				<li>Quisque mattis tortor ac elit lobort</li>
-				<li>Integer nec nisi eu ante vestibulu</li>
-				<li>Vestibulum molestie nibh sed urna</li>
-				<li>Nunc ornare massa eget risus gra</li>
-			</ul>
-		</article>
-		<article class = "center column">
-			<div class="column" style="background-color: #5c140e"><h2 style="text-align: center; color: #FFFFFF; padding-top: 25px;" >260 x 125px</h2></div>
+			<div class="b-top">	
+				<ul>
+					<li>Lorem ipsum dolor sit amet, conse</li>
+					<li>Nunc tincidunt augue at sapien viv</li>
+					<li>Quisque mattis tortor ac elit lobort</li>
+					<li>Integer nec nisi eu ante vestibulu</li>
+					<li>Vestibulum molestie nibh sed urna</li>
+					<li>Nunc ornare massa eget risus gra</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div class="rectangle"><h2>260 x 125px</h2></div>
 			<h4>Ipsumsenterdum non velit</h4>
-			<p> Morbitincidunt maurisque eros molest<br>
-				nunc anteget sed vel lacum mus semper.<br>
-				Anterdumnullam interdum eros dui urna<br>
-				consequam ac nisl nullam ligula vestass.<br>
-				Condimentumfelis et amet tellent<br>
-				quisquet a leo lacus nec augue.<br>
-			</p>
-			
-					<h4>Cursusoci conseque mauristi bulum</h4>
-		</article>
-		<article class = "right column">
-			<div class="column" style="background-color: #5c140e"><h2 style="text-align: center; color: #FFFFFF; padding-top: 25px;" >260 x 125px</h2></div>
+			<div class="b-top">	
+				<p> 
+					Morbitincidunt maurisque eros molest<br>
+					nunc anteget sed vel lacum mus semper.<br>
+					Anterdumnullam interdum eros dui urna<br>
+					consequam ac nisl nullam ligula vestass.<br>
+					Condimentumfelis et amet tellent<br>
+					quisquet a leo lacus nec augue.<br>
+				</p>
+				
+					<h4 style="color: #666666"><strong>Cursusoci conseque mauristi bulum</strong></h4>
+			</div>
+		</section>
+		<section>
+			<div class="rectangle"><h2>260 x 125px</h2></div>
 			<h4>Ipsumsenterdum non velit</h4>
-			<p> Morbitincidunt maurisque eros molest<br>
-				nunc anteget sed vel lacum mus semper.</p>
-            <ul>
-            	<li>Lorem ipsum dolor sit amet, conse</li>
-                <li>Nunc tincidunt augue at sapien viv</li>
-            </ul>
-            <p> Morbitincidunt maurisque eros molest<br>
-				nunc anteget sed vel lacum mus semper.<br>
-				Anterdumnullam interdum eros dui urna<br>
-			</p>
-		</article>
-	</section>
+			<div class="b-top">		
+				<p> Morbitincidunt maurisque eros molest<br>
+					nunc anteget sed vel lacum mus semper.</p>
+            	<ul>
+            		<li>Lorem ipsum dolor sit amet, conse</li>
+            	    <li>Nunc tincidunt augue at sapien viv</li>
+            	</ul>
+            	<p> Morbitincidunt maurisque eros molest<br>
+					nunc anteget sed vel lacum mus semper.<br>
+					Anterdumnullam interdum eros dui urna<br>
+				</p>
+			</div>
+		</section>
+	</article>
+	<footer>
+		<form class="forma">
+			<table >
+				<tr>
+					<td>
+						<p>
+							<label>Emri:</label><br>
+							<input type="text" name="title" size="30">
+						</p>
+					</td>
+					<td >
+							<p>
+								<label>Email:</label><br>
+								<input type="text" name="title" size="30"></br>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						
+						<td colspan="2">
+							<p>
+							<label>Message:</label><br>
+							<textarea name="description" rows="5" cols="63"></textarea>
+						</p>
+						</td>
+				</tr>
 
+				<tr>
+					<td>
+						<div>
+							<input type="submit" class="rounded">
+							<input type="reset" value="Reset" class="rounded">
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+
+	</form>
+	</footer>
 </body>
 </html>
