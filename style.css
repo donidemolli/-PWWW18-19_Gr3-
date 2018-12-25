@@ -100,6 +100,32 @@
 			.square:hover {
 			  animation: shake 0.82s;
 			}
+			.square2{
+				width: 320px;
+				height: 115px;
+				margin: -95px;
+				margin-left:20px;
+				margin-bottom: 50px;
+
+			}
+			.square2:hover {
+			  animation: shake 0.82s;
+			}
+
+			.square3{
+				width:160px;
+				height: 160px;
+				background-color: #b3ccff;
+				display: inline-block;
+				margin: 38px;
+
+			}
+			.square3:hover {
+			  animation: shake 0.82s;
+			}
+			
+
+
 			@keyframes shake {
 			  10%, 90% {
 			    transform: translate3d(-1px, 0, 0);
@@ -134,8 +160,21 @@
 				padding: 20px:;
 				height: 410px;
 			}
+			#div4{
+				background-color:  #80aaff;
+				height: 360px;
+				color: #FFFFFF;
+				padding: 250px;
+			}
+			#div5{
+				background-color:  #80aaff;
+				height: 2900px;
+				color: #FFFFFF;
+				padding: 250px;
+				padding-top: 50px;
+				}
 			article{
-				background-color: #FFFFFF;
+				
 				width: 92%;
 				height: 440px;
 				position: absolute;
@@ -182,6 +221,7 @@
 			.b-top{
 				border-top: 1px solid #b2b2b2;
 				width: 100%;
+				color: black;
 			}
 
 			#forma{
@@ -235,6 +275,9 @@
 				height: 36px;
 				width: 50px;
 			}
+
+           
+
 			footer{
 				background-color: #250705;
 				color: white;
