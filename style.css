@@ -144,7 +144,7 @@
 			  }
 			}
 			#div1{
-				background-color:  #80aaff;
+				background-color: #80aaff;
 				height: 360px;
 				color: #FFFFFF;
 				padding: 20px;
@@ -161,17 +161,32 @@
 				height: 410px;
 			}
 			#div4{
-				background-color:  #80aaff;
+				background-color: 	#B0C4DE;
 				height: 360px;
 				color: #FFFFFF;
 				padding: 250px;
 			}
 			#div5{
 				background-color:  #80aaff;
-				height: 2900px;
+				height: 3900px;
 				color: #FFFFFF;
 				padding: 250px;
 				padding-top: 50px;
+				}
+			#div6{
+				background-color: 	#C0C0C0;
+				height: 3000px;
+				color: navy blue;
+				padding: 50px;
+				padding-top: 40px;
+				}
+
+			#div7{
+				background-color: 	#B0C4DE;
+				height:800px;
+				color: #444;;
+				padding: 250px;
+				padding-top: 40px;
 				}
 			article{
 				
