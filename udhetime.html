@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<title>Lorem Ipsum</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/gotop.js"></script>
+		<script src="js/backgroundchanger.js"></script>
+		<script src="js/validimi.js"></script>
 </head>
 <body>
-	<header>
+	<header id="background">
 		<div class="header">
 			<a href="index.html">
 				<h1>Lorem Ipsum</h1>
@@ -20,7 +23,7 @@
 					<li><a href="udhetime.html">Udhetime</a></li>
 					<li><a href="destinacione.html">Destinacione te veçanta</a></li>
 					<li><a href="kontrata.html">Kontrata</a></li>
-					<li><a href="#div3">Kontakt</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -90,19 +93,19 @@
 	<div id="div3">
 		<div class="block">
 			<h3>Na kontaktoni tani !</h3>
-			<form id="forma">
-				<table >
+			<form id="forma" onsubmit="return validimi(forma)" action="http://www.randyconnolly.com/tests/process.php">
+				<table>
 					<tr>
 						<td>
 							<p>
 								<label>Emri dhe Mbiemri:</label><br>
-								<input type="text" name="title" size="30">
+								<input type="text" name="emri" size="30">
 							</p>
 						</td>
 						<td >
 								<p>
 									<label>E-mail:</label><br>
-									<input type="email" name="title" size="30"></br>
+									<input type="email" name="email" size="30"></br>
 								</p>
 							</td>
 						</tr>
@@ -179,5 +182,6 @@
 		<p>Copyright &COPY; 2019 Lorem Ipsum - All Rights Reserved</p>
 		<p>Templates by  Grupi i III, PWWW - FSHMN</p>
 	</footer>
+	<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
 </body>
 </html>
