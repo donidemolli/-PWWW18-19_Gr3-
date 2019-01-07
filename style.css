@@ -141,7 +141,7 @@
 				font-family: Staatliches, cursive;
 				background-image: linear-gradient(#e4dfcb,#cec6a2);
 				padding: 20px:;
-				height: 410px;
+				height: 700px;
 			}
 			article{
 				background-image: url(img/sky.jpg);
@@ -348,6 +348,10 @@
 				transition: max-height 0.2s ease-out;
 				background-color: rgba(241,241,241,0.7);
 			}
+			#gallery{
+				background-image: linear-gradient(#37b9e9,#2aa6d4,#37b9e9);
+				padding: 20px;
+			}
 			#topbtn {
 				display: none; 
 				position: fixed; 
@@ -365,5 +369,14 @@
 			}
 			#topbtn:hover {
   				background-color: rgba(255,0,0,0.7);
+  				animation: shake 0.82s;
+			}
+			#hello{
+				position: fixed;
+				top: 12.75%;
+				width: 98.8%;
+				text-align: center;
+				background-color: rgba(0,0,0,0.4);
+				color: white;
 			}
 		</style>

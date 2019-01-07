@@ -19,7 +19,7 @@
 			}
 
 			.row > .column {
-			  padding: 0 8px;
+			  padding: 8px;
 			}
 
 			.row:after {
@@ -161,76 +161,121 @@
 		<div class="header">
 			<nav class="navbar">
 				<ul>
-					<li><a href="udhetime.html">Udhetime</a></li>
-					<li><a href="destinacione.html">Destinacione te veçanta</a></li>
+					<li><a href="udhetime.html">Udhëtime</a></li>
+					<li><a href="destinacione.html">Destinacione të veçanta</a></li>
 					<li><a href="kontrata.html">Kontrata</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="gallery.html">Galeria</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<h2 style="text-align:center">Lightbox</h2>
+	<div id="gallery">
+		<h2 style="text-align:center; margin-top: 0; color: white; font-size: 34px; font-style: verdana; font-weight: 500;">GALERIA</h2>
+		<div class="row">
+		  <div class="column">
+		    <img src="img/PC1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img/T1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img/M1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img/M3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img/PC3.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img/T3.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img/M2.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+		    <img src="img/T2.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+		  </div>
+		</div>
 
-	<div class="row">
-	  <div class="column">
-	    <img src="img/PC1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-	  </div>
-	  <div class="column">
-	    <img src="img/T1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-	  </div>
-	  <div class="column">
-	    <img src="img/M1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-	  </div>
-	  <div class="column">
-	    <img src="img/M3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-	  </div>
-	</div>
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
 
-	<div id="myModal" class="modal">
-	  <span class="close cursor" onclick="closeModal()">&times;</span>
-	  <div class="modal-content">
+		    <div class="mySlides">
+		      <div class="numbertext">1 / 8</div>
+		      <img src="img/PC1.jpg" style="width:100%">
+		    </div>
 
-	    <div class="mySlides">
-	      <div class="numbertext">1 / 4</div>
-	      <img src="img/PC1.jpg" style="width:100%">
-	    </div>
+		    <div class="mySlides">
+		      <div class="numbertext">2 / 8</div>
+		      <img src="img/T1.jpg" style="width:100%">
+		    </div>
 
-	    <div class="mySlides">
-	      <div class="numbertext">2 / 4</div>
-	      <img src="img/T1.jpg" style="width:100%">
-	    </div>
+		    <div class="mySlides">
+		      <div class="numbertext">3 / 8</div>
+		      <img src="img/M1.jpg" style="width:100%">
+		    </div>
+		    
+		    <div class="mySlides">
+		      <div class="numbertext">4 / 8</div>
+		      <img src="img/M3.jpg" style="width:100%">
+		    </div>
 
-	    <div class="mySlides">
-	      <div class="numbertext">3 / 4</div>
-	      <img src="img/M1.jpg" style="width:100%">
-	    </div>
-	    
-	    <div class="mySlides">
-	      <div class="numbertext">4 / 4</div>
-	      <img src="img/M3.jpg" style="width:100%">
-	    </div>
-	    
-	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		    <div class="mySlides">
+		      <div class="numbertext">5 / 8</div>
+		      <img src="img/PC3.jpg" style="width:100%">
+		    </div>
 
-	    <div class="caption-container">
-	      <p id="caption"></p>
-	    </div>
+		    <div class="mySlides">
+		      <div class="numbertext">6 / 8</div>
+		      <img src="img/T3.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">7 / 8</div>
+		      <img src="img/M2.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">8 / 8</div>
+		      <img src="img/T2.jpg" style="width:100%">
+		    </div>
+		    
+		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		    <div class="caption-container">
+		      <p id="caption"></p>
+		    </div>
 
 
-	    <div class="column">
-	      <img class="demo cursor" src="img/PC1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Punta Cana - Republika Domenicane">
-	    </div>
-	    <div class="column">
-	      <img class="demo cursor" src="img/T1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Tajland">
-	    </div>
-	    <div class="column">
-	      <img class="demo cursor" src="img/M1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Maldive">
-	    </div>
-	    <div class="column">
-	      <img class="demo cursor" src="img/M3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Maldive">
-	    </div>
-	  </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img/PC1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Punta Cana - Republika Domenicane">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img/T1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Tajland">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img/M1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Maldive">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img/M3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Maldive">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img/PC3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Punta Cana - Republika Domenicane">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img/T3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Tajland">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img/M2.jpg" style="width:100%" onclick="currentSlide(7)" alt="Maldive">
+		    </div>
+		    <div class="column">
+		      <img class="demo cursor" src="img/T2.jpg" style="width:100%" onclick="currentSlide(8)" alt="Tajland">
+		    </div>
+		  </div>
+		</div>
 	</div>
 	
 	<div id="div3">
@@ -319,7 +364,8 @@
 				</p>
 			</form>	
 			</div>
-				
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=sheshi%20nena%20tereze%20prishtine&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">wordpres</a></div><style>.mapouter{text-align:right;height:500px;width:1000px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:1000px;}</style>
+			</div>	
 	</div>
 	<script>
 		function openModal() {
