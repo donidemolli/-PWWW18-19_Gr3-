@@ -249,6 +249,7 @@
 				color: white;
 				margin-top: -22px;
 				height: 46px;
+				text-align: center;
 			}
 			footer p{
 				display: inline-block;
@@ -258,6 +259,21 @@
 			}
 			footer p:last-child{
 				float: right;
+			}
+			footer button{
+				height: 100%;
+				background-color: rgba(170,45,45,0.5);
+				color: white;
+				position:relative;
+				left: -40px;
+				border-radius: 160px;
+				padding: 2px;
+				border: none;
+				cursor: pointer;
+			}
+			footer button:hover{
+				animation: shake 0.82s;
+				background-color: rgba(170,45,45,1);
 			}
 			.socialnetwork{
 				width: 22px;

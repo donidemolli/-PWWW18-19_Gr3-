@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="site.manifest">
 <head>
 		<meta charset="utf-8">
 		<title>Lorem Ipsum</title>
@@ -8,6 +8,7 @@
 		<script src="js/gotop.js"></script>
 		<script src="js/backgroundchanger.js"></script>
 		<script src="js/validimi.js"></script>
+		<script src="js/storage.js"></script>
 </head>
 <body>
 	<header id="background">
@@ -40,16 +41,16 @@
 		</div>
 		<div class="intro">
 			<div class="top">
-				<img class="square" src="img/10.png" alt="Egjipt">
-				<img class="square" src="img/01.png" alt="Tajlandë">
-				<img class="square" src="img/02.png" alt="Kapadokia">
-				<img class="square" src="img/04.png" alt="Dubai">
+				<img class="square" src="img/10.png" alt="Egjipt" title="Egjipt">
+				<img class="square" src="img/01.png" alt="Tajlandë" title="Tajlandë">
+				<img class="square" src="img/02.png" alt="Kapadokia" title="Kapadokia">
+				<img class="square" src="img/04.png" alt="Dubai" title="Dubai">
 			</div>
 			<div class="bottom">	
-				<img class="square" src="img/08.png" alt="Milano">
-				<img class="square" src="img/12.png" alt="Maldive">
-				<img class="square" src="img/07.png" alt="Paris">
-				<img class="square" src="img/11.png" alt="Santorin">
+				<img class="square" src="img/08.png" alt="Milano" title="Milano">
+				<img class="square" src="img/12.png" alt="Maldive" title="Maldive">
+				<img class="square" src="img/07.png" alt="Paris" title="Paris">
+				<img class="square" src="img/11.png" alt="Santorin" title="Santorin">
 			</div>
 		</div>
 	</div>
@@ -183,11 +184,11 @@
 							   	   </a>
 					</p>
 				</div>
-			<form id="forma2">
+			<form id="forma2" onsubmit="return validimi2(forma2)" action="http://www.randyconnolly.com/tests/process.php">
 				<p>
 					<label for="email">Informohuni per cdo ofertë »</label>
 					<input type="email" name="email" size="30" placeholder=" Shkruani e-mail adresën tuaj ketu ">
-					<button type="button">GO</button>
+					<button type="submit">GO</button>
 				</p>
 			</form>	
 			</div>
@@ -197,6 +198,7 @@
 	</div>
 	<footer>
 		<p>Copyright &COPY; 2019 Lorem Ipsum - All Rights Reserved</p>
+		<button onclick="timespent()">Klikoni ketu</button>
 		<p>Templates by  Grupi i III, PWWW - FSHMN</p>
 	</footer>
 	<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>

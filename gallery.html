@@ -8,6 +8,7 @@
 		<script src="js/gotop.js"></script>
 		<script src="js/backgroundchanger.js"></script>
 		<script src="js/validimi.js"></script>
+		<script src="js/storage.js"></script>
 
 		<style>
 			body {
@@ -356,7 +357,7 @@
 							   	   </a>
 					</p>
 				</div>
-			<form id="forma2">
+			<form id="forma2" onsubmit="return validimi2(forma2)" action="http://www.randyconnolly.com/tests/process.php">
 				<p>
 					<label for="email">Informohuni per cdo ofertë »</label>
 					<input type="email" name="email" size="30" placeholder=" Shkruani e-mail adresën tuaj ketu ">
@@ -408,6 +409,7 @@
 	</script>
 	<footer>
 		<p>Copyright &COPY; 2019 Lorem Ipsum - All Rights Reserved</p>
+		<button onclick="timespent()">Klikoni ketu</button>
 		<p>Templates by  Grupi i III, PWWW - FSHMN</p>
 	</footer>
 	<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
